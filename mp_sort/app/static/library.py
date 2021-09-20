@@ -3,14 +3,15 @@ import random
 array = None
 array_str = None
 def gen_random_int(number, seed):
-	pass
+	data = list(range(0,10))
+	return data
 
 def generate():
 	global array
 
 	number = 10
 	seed = 200
-	result = [1,2,3,4,5,6,7,8,9,0]
+	result = gen_random_int(number,seed)
 	random.seed(seed)
 	random.shuffle(result)
 	st = ""
